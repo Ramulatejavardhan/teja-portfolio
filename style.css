@@ -104,6 +104,69 @@
     max-width: var(--max);
     margin: 0 auto;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  .hero-left { flex: 1; min-width: 0; }
+  .hero-right {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Profile card */
+  .profile-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  .profile-ring {
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 0deg,
+      var(--accent2) 0%,
+      transparent 40%,
+      transparent 60%,
+      var(--accent2) 100%
+    );
+    opacity: 0.5;
+    animation: spin 8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .profile-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    border: 3px solid var(--bg);
+    box-shadow:
+      0 0 0 1px var(--border2),
+      0 20px 60px rgba(0,0,0,0.5),
+      0 0 40px rgba(200,168,96,0.08);
+    display: block;
+    z-index: 1;
+  }
+  .profile-placeholder {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: var(--bg3);
+    border: 3px solid var(--border2);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--accent2);
+    z-index: 1;
   }
   .hero-tag {
     display: inline-flex; align-items: center; gap: 8px;
@@ -575,6 +638,12 @@
     .form-row { grid-template-columns: 1fr; }
     section { padding: 70px 5vw; }
     footer { flex-direction: column; align-items: flex-start; }
+    /* Hero mobile */
+    .hero-content { flex-direction: column-reverse; gap: 2.5rem; text-align: center; }
+    .hero-left { display: flex; flex-direction: column; align-items: center; }
+    .hero-sub { max-width: 100%; }
+    .hero-actions { justify-content: center; }
+    .profile-card { width: 200px; height: 200px; }
   }
 
   /* ANIMATIONS */
