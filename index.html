@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tejavardhan — Frontend & Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">Tejavardhan</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:ramulatejavardhan6@gmail.com" class="nav-cta">Get in Touch</a>
+  <button class="hamburger" id="menuBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Open to Work</div>
+    <h1 class="hero-headline">
+      Frontend Developer<br>
+      &amp; <span class="line-accent">AI Enthusiast.</span>
+    </h1>
+    <p class="hero-sub">
+      I'm Tejavardhan — a Frontend Developer expanding into full-stack development. I build responsive web experiences with HTML, CSS, JavaScript, and React, and I'm actively growing my backend development skills.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View My Work →</a>
+      <a href="#contact" class="btn-ghost">Let's Connect</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid fade-up">
+      <div class="about-text">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Building with purpose,<br>learning every step.</h2>
+        <p>I'm a final-year <strong>AI &amp; Data Science</strong> student from Hyderabad, India, with a strong interest in frontend development and building practical web solutions.</p>
+        <p>My approach is simple: <strong>learn by doing</strong>. Every project teaches me something new — whether it's deepening my JavaScript, exploring API integrations, or crafting pixel-perfect responsive layouts.</p>
+        <p>I'm focused on <strong>Python, prompt engineering</strong>, and expanding into full-stack development — currently building backend skills alongside my frontend work.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">4+</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">Full</div>
+          <div class="stat-label">Stack Journey</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">Open</div>
+          <div class="stat-label">to Work</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title">What I work with.</h2>
+    </div>
+    <div class="skills-cats fade-up">
+      <div>
+        <div class="skill-cat-label">Frontend Development</div>
+        <div class="skill-chips">
+          <span class="chip featured">HTML5</span>
+          <span class="chip featured">CSS3</span>
+          <span class="chip featured">JavaScript</span>
+          <span class="chip featured">React</span>
+          <span class="chip">Tailwind CSS</span>
+          <span class="chip">Responsive Design</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cat-label">Programming & AI Tools</div>
+        <div class="skill-chips">
+          <span class="chip featured">Python</span>
+          <span class="chip">Prompt Engineering</span>
+          <span class="chip">AI Fundamentals</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cat-label">Backend Development</div>
+        <div class="skill-chips">
+          <span class="chip featured">REST APIs</span>
+          <span class="chip featured">MongoDB</span>
+          <span class="chip">Server-side Logic</span>
+          <span class="chip">Database Basics</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cat-label">Tools & Deployment</div>
+        <div class="skill-chips">
+          <span class="chip">Git &amp; GitHub</span>
+          <span class="chip">Vercel</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">VS Code</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cat-label">Currently Learning</div>
+        <div class="skill-chips">
+          <span class="chip">Backend Development</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Full Stack Dev</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Things I've built.</h2>
+    </div>
+    <div class="projects-grid fade-up">
+
+      <div class="project-card project-featured">
+        <div class="project-header">
+          <div class="project-icon">🎓</div>
+          <div class="project-name">Edu Buddy</div>
+          <div class="project-desc">A student-focused learning platform that helps users discover the right career path, track progress, and build skills through guided roadmaps, quizzes, and self-evaluation tools — powered by AI assistance.</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">AI API</span>
+            <span class="project-tag">Education Platform</span>
+          </div>
+          <div class="project-links">
+            <a href="https://edubuddy83.vercel.app/" target="_blank" class="project-link demo">Live Demo ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🌤️</div>
+          <div class="project-name">Weather App</div>
+          <div class="project-desc">A real-time weather application that fetches live data via a public weather API. Features a clean, responsive UI with location-based forecasts and dynamic condition display.</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">REST API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://tejaweatherapp83.vercel.app/" target="_blank" class="project-link demo">Live Demo ↗</a>
+            <a href="https://github.com/Ramulateja/weather.git" target="_blank" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🧮</div>
+          <div class="project-name">Calculator</div>
+          <div class="project-desc">A functional calculator application with support for all standard arithmetic operations. Built with a clean, minimal interface focused on usability and visual clarity.</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://tejacalculator83.vercel.app/" target="_blank" class="project-link demo">Live Demo ↗</a>
+            <a href="https://github.com/Ramulateja/calculator.git" target="_blank" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">✅</div>
+          <div class="project-name">Todo List</div>
+          <div class="project-desc">A task management application with full CRUD functionality. Built with Tailwind CSS for styling and JavaScript for dynamic interactions — clean and mobile-friendly.</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">Tailwind CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://tejatodolist83.vercel.app/" target="_blank" class="project-link demo">Live Demo ↗</a>
+            <a href="https://github.com/Ramulateja/Todo-list" target="_blank" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label">Experience</div>
+      <h2 class="section-title">My journey so far.</h2>
+    </div>
+    <div class="timeline fade-up">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2024 — Present</div>
+        <div class="timeline-role">AI Web Development Project</div>
+        <div class="timeline-org">AI-assisted Web Development</div>
+        <div class="timeline-desc">Working on AI-assisted website generation tasks, analyzing existing portfolio structures and building improved, modern redesigns. Applying frontend skills with AI tools to produce production-ready web experiences.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2024</div>
+        <div class="timeline-role">Frontend Projects</div>
+        <div class="timeline-org">Self-directed Development</div>
+        <div class="timeline-desc">Built and deployed multiple web applications — a real-time weather app with REST API integration, a calculator, a Tailwind-powered todo list, and Edu Buddy, an AI-assisted learning platform. All projects live on Vercel.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2022 — Present</div>
+        <div class="timeline-role">AI &amp; Data Science Student</div>
+        <div class="timeline-org">Final Year — Hyderabad, India</div>
+        <div class="timeline-desc">Pursuing a degree in AI, with a focus on Python programming, prompt engineering, responsive web development, and currently expanding into backend development.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label">Services</div>
+      <h2 class="section-title">What I can do for you.</h2>
+    </div>
+    <div class="services-grid fade-up">
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <div class="service-name">Frontend Development</div>
+        <div class="service-desc">Building fast, clean, and functional web pages using HTML, CSS, JavaScript, and React.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <div class="service-name">Responsive Design</div>
+        <div class="service-desc">Crafting websites that look polished and work flawlessly across all devices and screen sizes.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <div class="service-name">AI-Assisted Development</div>
+        <div class="service-desc">Leveraging AI tools and prompt engineering to accelerate website creation and enhance quality.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <div class="service-name">Website Analysis &amp; Improvement</div>
+        <div class="service-desc">Reviewing and restructuring existing websites for better layout, readability, and visual quality.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🚀</div>
+        <div class="service-name">Website Deployment</div>
+        <div class="service-desc">Deploying projects to platforms like Vercel with proper configuration and performance optimization.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's work together.</h2>
+    </div>
+    <div class="contact-grid fade-up">
+      <div class="contact-info">
+        <h3>Let's build something together</h3>
+        <p>I'm open to frontend development roles, freelance projects, and collaborative opportunities. Reach out and let's talk.</p>
+        <div class="contact-links">
+          <a href="mailto:ramulatejavardhan6@gmail.com" class="contact-link">
+            <div class="contact-link-icon">✉️</div>
+            ramulatejavardhan6@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/ramula-tejavardhan" target="_blank" class="contact-link">
+            <div class="contact-link-icon">in</div>
+            linkedin.com/in/ramula-tejavardhan
+          </a>
+          <a href="https://github.com/Ramulateja" target="_blank" class="contact-link">
+            <div class="contact-link-icon" style="font-size:1rem;">⬡</div>
+            github.com/Ramulateja
+          </a>
+          <a href="https://wa.me/6303248229" target="_blank" class="contact-link">
+            <div class="contact-link-icon">💬</div>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Project inquiry / Collaboration / Role...">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="submitBtn">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    <strong>Tejavardhan</strong> · Frontend Developer · Hyderabad, India
+  </div>
+  <div class="footer-links">
+    <a href="https://github.com/Ramulateja" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/ramula-tejavardhan" target="_blank">LinkedIn</a>
+    <a href="https://www.instagram.com/mr_tej.18" target="_blank">Instagram</a>
+    <a href="mailto:ramulatejavardhan6@gmail.com">Email</a>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
